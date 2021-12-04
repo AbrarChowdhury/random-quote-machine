@@ -1,4 +1,4 @@
-# Random Qoute Machine
+# Random Quote Machine
 
 A project suggested by free code camp 
 
