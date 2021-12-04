@@ -2,6 +2,8 @@
 
 A project suggested by free code camp 
 
+## [Demo](https://abrars-quote-machine.netlify.app/)
+
 ## After Cloning
 
 run the script `npm i` in the project directory to install all the required packages
