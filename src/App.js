@@ -23,7 +23,7 @@ function App() {
     }, [state])
 
   return (
-    <div className="App" style={{background:color, height:"100vh", paddingTop:"30vh"}}>
+    <div className="App" style={{background:color, height:"100vh", display:"grid",alignContent:"center", justifyContent:"center"}}>
       <QuoteBox quote={quote} update={update} color={color}/>
       <p style={{color:"white"}}>by abrar</p>
     </div>

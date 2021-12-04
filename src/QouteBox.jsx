@@ -1,11 +1,14 @@
-import {Paper,Fade} from '@mui/material'
+import {Paper,Fade, Button} from '@mui/material'
 
 function QuoteBox({quote,update,color} ) {
 
 
     const styles={
-        paper:{margin:"0 auto",maxWidth:"400px", padding:"20px",color:color},
-        author:{float:"right"},
+        paper:{ maxWidth:"400px", padding:"20px",color:color},
+        author:{float:"right", margin:"0"},
+        button:{float:"left",background:color, color:"white", display:"block",'&:hover': {
+       background: "grey",
+    },}
     }
 
     return (
@@ -13,9 +16,9 @@ function QuoteBox({quote,update,color} ) {
         <Paper id="quote-box" style={styles.paper} elevation={5}>
             <p id="text">{quote?.quote}</p>
             <p id="author" style={styles.author}>- {quote?.author}</p>
-            <button id="new-quote" onClick={update}>new quote</button>
-            <a href="twitter.com/intent/tweet" id="tweet-quote">tweet</a>
-        </Paper>
+            <br/>
+                <Button sx={styles.button} id="new-quote" variant="contained" onClick={update}>new quote</Button>
+            </Paper>
         </Fade>
     )
 }
